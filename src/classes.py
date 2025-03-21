@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
 @dataclass
-class User:
-    name: str = ""
+class Player:
+    char_name: str = ""
+    char_class: str = ""
