@@ -1,16 +1,18 @@
-from classes import User
-
-def create_user() -> User:
-    """Creates a new User object and greets the user upon entry into the game.
-    
-    :return: A new User object.
-    :rtype: User"""
+def start_new_game() -> None:
+    """Starts a new game for the user upon confirmation."""
     while True:
         try:
-            name: str = input("What is your name? ").title()
+            start_game: str = input("Start a new game? (y/n) ").lower()
         except Exception:
             print("Something went wrong. Try again.")
             continue
         else:
-            print(f"Welcome to Baldur's Gate 0.0.1. {name}!")
-            return User(name=name)
+            if start_game == "y":
+                print("Starting a new game..")
+                break
+            elif start_game == "n":
+                print("A new game has not started.")
+                continue
+            else:
+                print("Input can only be 'y' or 'n'. Try again.")
+                continue

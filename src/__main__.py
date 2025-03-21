@@ -1,13 +1,10 @@
-from preGame_module import create_user
-from classes import User
+from preGame_module import start_new_game
 import sys
 
-
 def main() -> None:
-    # Create new User object and greet user
-    user: User = create_user()
-    
-    
+    start_new_game()
+        
+        
     sys.exit("Program end reached. Shutting down..")
     
     
