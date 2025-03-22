@@ -73,3 +73,16 @@ def create_character(current_player: Player) -> None:
     print("Creating character..")
     time.sleep(2.0)
     print(f"Character created: [Name = {current_player.char_name}; Class = {current_player.char_class}]")
+
+def load_game() -> None:
+    """Loads the Player into the game."""
+    print("Loading game..")
+    time.sleep(1.0)
+    print("Initializing GPU..")
+    time.sleep(3.0)
+    print("Loading assets..")
+    time.sleep(2.0)
+    print("Setting up scenes..")
+    time.sleep(2.0)
+    print("Complete.")
+    time.sleep(2.0)
